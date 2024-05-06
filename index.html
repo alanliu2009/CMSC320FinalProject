@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CMSC320FinalProject</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7680,7 +7680,7 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"database.csv"</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"database.csv"</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -7691,18 +7691,10 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>&lt;ipython-input-112-7918525092ae&gt;:1: DtypeWarning: Columns (9,12,15,17) have mixed types. Specify dtype option on import or set low_memory=False.
-  df = pd.read_csv("database.csv")
-</pre>
-</div>
-</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-dff17b9e-bc67-4698-8ccd-8c24d2d4252d">
+<div class="colab-df-container" id="df-b697afc5-fe99-4563-868c-1099c39643b8">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -7871,7 +7863,7 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-dff17b9e-bc67-4698-8ccd-8c24d2d4252d')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-b697afc5-fe99-4563-868c-1099c39643b8')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -7918,12 +7910,12 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-dff17b9e-bc67-4698-8ccd-8c24d2d4252d button.colab-df-convert');
+        document.querySelector('#df-b697afc5-fe99-4563-868c-1099c39643b8 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-dff17b9e-bc67-4698-8ccd-8c24d2d4252d');
+        const element = document.querySelector('#df-b697afc5-fe99-4563-868c-1099c39643b8');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7941,8 +7933,8 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
       }
     </script>
 </div>
-<div id="df-5bc81033-3118-48f5-8d8f-e98e33ebe0b3">
-<button class="colab-df-quickchart" onclick="quickchart('df-5bc81033-3118-48f5-8d8f-e98e33ebe0b3')" style="display:none;" title="Suggest charts">
+<div id="df-cb89537f-66c2-4a08-9726-46fe94295aef">
+<button class="colab-df-quickchart" onclick="quickchart('df-cb89537f-66c2-4a08-9726-46fe94295aef')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8055,7 +8047,7 @@ Alan Liu, Andrew Cupps, Chang Robert Xu 5/5/24</p>
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-5bc81033-3118-48f5-8d8f-e98e33ebe0b3 button');
+        document.querySelector('#df-cb89537f-66c2-4a08-9726-46fe94295aef button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
